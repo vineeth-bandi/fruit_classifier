@@ -1,7 +1,7 @@
 # fruit_classifier
 A simple multi-class classifier for 15 types of fruit.
 ## Transfer Learning
-Resnet18 and Resnet50 pretrained on Imagenet then finetuned using fruit images.
+Resnet18 and Resnet50 pretrained on Imagenet then finetuned using fruit images. In this project, I only replace the final linear layer of each network which might explain the slightly lower performance of Resnet50 compared to Resnet18.
 ## Results
 ### Resnet18
 Accuracy of the network on the test images: 96 %  
