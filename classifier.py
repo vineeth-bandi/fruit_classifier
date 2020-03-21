@@ -33,7 +33,7 @@ data_transforms = {
     ])
 }
 
-data_dir = r'C:\Users\Vineeth\Desktop\Vineeth\MISC\ML Projects\fruit_classifier\images'
+data_dir = os.path.join(os.getcwd(), "images")
 splits = ['train', 'val', 'test']
 image_datasets = {f: datasets.ImageFolder(os.path.join(data_dir, f),
                                           data_transforms[f])
